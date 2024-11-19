@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    Home work FD2-145-24-Vowels</title>
+</head>
+<body>
+    <script>
+    function sumVowels() {
+        const str = prompt('Введите любую строку на русском','').toLowerCase();
+        const arr = str.split('');
+        let sum = 0;
+            for (let i=0; i<arr.length; i++) {
+                item = arr[i];
+            if (item === 'а' ||
+                item === 'о' ||
+                item === 'и' ||
+                item === 'е' ||
+                item === 'ё' ||
+                item === 'э' ||
+                item === 'ы' ||
+                item === 'у' ||
+                item === 'ю' ||
+                item === 'я') {
+          sum++;
+        };
+      } return sum;
+    }
+
+    console.log(sumVowels());
+    </script>
+</body>
+</html>
